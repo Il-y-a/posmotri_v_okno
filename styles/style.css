@@ -135,7 +135,7 @@ ol {
 }
 
 .search-form__textfield:active {
-  outline: 1px solid #fff;
+  outline: 1px solid #FFF;
 }
 
 .search-form__textfield:focus {
