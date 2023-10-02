@@ -44,7 +44,8 @@ ol {
   align-items: center;
   align-self: center;
   padding-inline: 30px 30px;
-  max-width: 1140px;
+  width: 1140px;
+  height: 534px;
   gap: 30px;
 }
 
@@ -53,7 +54,7 @@ ol {
   flex-wrap: wrap;
   align-self: flex-end;
   max-width: 711px;
-  gap: 16px;
+  gap: 11px;
 }
 
 .result__video-container {
@@ -63,6 +64,7 @@ ol {
 
 .result__video {
   width: 711px;
+  height: 386px;
   object-position: center;
   object-fit: cover;
 }
@@ -83,6 +85,11 @@ ol {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  margin-bottom: 5px;
+}
+
+.search-form__fieldset {
+  border: none;
 }
 
 .search-form__fieldset-title {
@@ -102,6 +109,10 @@ ol {
 
 .search-form__label:has(.search-form__pseudo-checkbox):hover {
   text-decoration: underline;
+}
+
+.search-form__label:has(.search-form__pseudo-checkbox):active {
+  text-decoration: none;
 }
 
 .search-form__label:focus {
@@ -161,8 +172,11 @@ ol {
   justify-content: space-between;
   align-items: center;
   min-width: 212px;
-  min-height: 22px;
   margin-top: 5px;
+}
+
+.search-form__checkbox:checked + span {
+  background-color: #fff;
 }
 
 .search-form__pseudo-checkbox {
@@ -177,7 +191,7 @@ ol {
   outline-offset: 1px;
 }
 
-input[type="checkbox"]:checked + span {
+.search-form__pseudo-checkbox:active {
   background-color: #fff;
 }
 
@@ -210,6 +224,7 @@ input[type="checkbox"]:checked + span {
 
 .button:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .button:focus {
@@ -223,8 +238,8 @@ input[type="checkbox"]:checked + span {
 .content__details {
   display: flex;
   flex-wrap: wrap;
-  align-self: flex-end;
-  gap: 26px;
+  align-self: flex-start;
+  gap: 19px;
 }
 
 /* заголовок окна контента */
@@ -247,11 +262,12 @@ input[type="checkbox"]:checked + span {
   max-height: 298px;
   flex-wrap: wrap;
   overflow: auto;
-  gap: 30px;
+  gap: 36px;
 }
 
 .content__list-item {
-  padding: 2px;
+  padding-right: 1px;
+  padding-left: 1px;
   appearance: none;
   -webkit-apperence: none;
   -moz-appearance: none;
@@ -265,11 +281,11 @@ input[type="checkbox"]:checked + span {
 
 .content__list-item:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .content__card-link {
   display: block;
-  padding: 2px;
   text-decoration: none;
 }
 
@@ -333,10 +349,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .more-button {
-  min-width: 399px;
-  min-height: 34px;
+  width: 399px;
+  height: 34px;
 }
 
-fieldset {
-  border: none;
-}
