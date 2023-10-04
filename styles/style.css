@@ -261,8 +261,7 @@ ol {
   display: flex;
   max-height: 298px;
   flex-wrap: wrap;
-  overflow: auto;
-  gap: 33px;
+  overflow: hidden auto;
 }
 
 .content__list-item {
@@ -273,6 +272,10 @@ ol {
   -moz-appearance: none;
   border: none;
   outline: none;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 33px;
 }
 
 .content__list-item:hover {
@@ -314,7 +317,7 @@ ol {
 
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
-  font-size: 30px;
+  font-size: 29px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -351,9 +354,9 @@ ol {
 .more-button {
   width: 100%;
   min-height: 34px;
-  padding-left: 144px;
-  padding-right: 144px;
-  margin-bottom: 3px;
+  padding-left: 143px;
+  padding-right: 143px;
+  margin-bottom: 5px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
